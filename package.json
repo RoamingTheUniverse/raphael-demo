@@ -10,12 +10,18 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@types/styled-components": "^5.1.0",
     "antd": "^4.2.0",
     "raphael": "^2.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "styled-components": "^5.1.0",
     "typescript": "~3.7.2"
+  },
+  "resolutions": {
+    "moment": "2.24.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,7 +44,13 @@
       "last 1 safari version"
     ]
   },
+  "babel": {
+    "plugins": [
+      "babel-plugin-styled-components"
+    ]
+  },
   "devDependencies": {
-    "@types/raphael": "^2.3.0"
+    "@types/raphael": "^2.3.0",
+    "babel-plugin-styled-components": "^1.10.7"
   }
 }
